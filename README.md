@@ -1,7 +1,7 @@
 #  - How to run
 ##  - Run The Game 
 - Click here to download the Folder of the game:
-- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/GameToTest)
+- [Download GameToTest](downloads/GameToTest.zip)
 - this file includes the executable of the playable Drone Assignment.
 
 
