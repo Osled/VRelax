@@ -1,6 +1,7 @@
 #  - How to run
 ##  - Run The Game 
 - Click here to download the Folder of the game:
+- Navigate to Download Raw file
 - [Download GameToTest](GameToTest.zip)
 - this file includes the executable of the playable Drone Assignment.
 
