@@ -61,7 +61,7 @@
  - That includes the JobManager, Job, Drone, and JobAssigment scripts.
  - The following 30 minutes I spent on UI programming by using MVVM method scripts. I expanded on it the next day.
  - At the beginning, the UI only had text which was later connected to the Jobs' and Drones' status.
- #### 3 --16:00
+ #### 3 -- 16:00
  - The last hour I spent programming the DroneMovement and programmed it to avoid obstacles, so I used one line Raycast in front of the Drone. (later I changed it to a sphere Raycast because it was better for this situation)
 - Then I placed all the enviroment parts and enviroment assets. (I made a simple environment by using pre-existing shapes in Unity to save time)
 - **The Why** Focusing on the drone programing will tie the whole system together and make it runable even if it didn't look pretty. That is why I spent an extra 30 minutes just to fix the UI and the enviromental placement.
