@@ -1,11 +1,21 @@
+#  - How to run
+##  - Run The Game 
+- Click here to download the Folder of the game 
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test)
+- or here if you want a zip file of it
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test.zip)
 
-Using Zenject (Extenject) as a Dependancy Injector	
--Link
-https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
-- How to run
+
+##  - Dependancies 
+ Using Zenject (Extenject) as a Dependancy Injector	
 
 
-zenject
+##  - Run The Unity File
+
+- Link :  https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
+
+
+
 
 
 
