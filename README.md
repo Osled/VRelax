@@ -1,9 +1,9 @@
 #  - How to run
 ##  - Run The Game 
 - Click here to download the Folder of the game 
-- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test)
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/GameToTest)
 - or here if you want a zip file of it
-- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test.zip)
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/GameToTest.zip)
 
 
 ##  - Dependancies 
