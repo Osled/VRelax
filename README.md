@@ -1,3 +1,6 @@
+
+Using Zenject (Extenject) as a Dependancy Injector
+https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
 - How to run
 
 
