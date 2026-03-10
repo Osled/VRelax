@@ -44,7 +44,7 @@
 ![Unity Architecture](Doc/TimeManagementDay1.png)
 - Below are also the extra hours I have spent on the project to clean up drone code, other code and UI.
 ![Unity Architecture](Doc/TimeManagementDay2.png)
-
+### Brainstroming
 - The first hour I spent desiging and breaking down the requirements and priorties.
 - Shown below is the brainstorming of all the requirements of the assignment.
 ![Unity Architecture](Doc/BrainstormPlanning.png)
