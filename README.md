@@ -1,6 +1,6 @@
 #  - How to run
 ##  - Run The Game 
-- Here is howto download the Folder of the game:
+- Here is how to download the Folder of the game:
 - Navigate to Download Raw file, it is on the top right of the file beside the Word (Raw) you will find the Download Button.
 - Loosks like Arrow down pointing at a plate
 - [Download GameToTest](GameToTest.zip)
