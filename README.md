@@ -34,7 +34,7 @@
 
 ![Unity Architecture](Doc/UnityArchtectureVRelax.png)
 
-- What you prioritised in 2–3 hours and why
+## What you prioritised in 2–3 hours and why
 
 ![Unity Architecture](Doc/TimeManagementDay1.png)
 ![Unity Architecture](Doc/TimeManagementDay2.png)
