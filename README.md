@@ -37,9 +37,9 @@
 
 # What I have prioritised in 2–3 hours and why
 ### Time Management
-- I have started with pre-planning the project before I would start with development by setting up the following Time table
+- I started with pre-planning the project before I began with the development by setting up the following time table
 - using **Agile** Methodology
-- That is to give me a clear idea of what is the task at hand and best approuch to takle it =
+- That was done to give me a clear idea of what the task at hand is how to and best approach the problem.
 
 ![Unity Architecture](Doc/TimeManagementDay1.png)
 - The following is also extra hours I have spent on the project to clean up code and UI and especially the Drone Code
