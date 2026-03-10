@@ -7,7 +7,7 @@ zenject
 
 - High-level architecture overview (diagram or text)
 
-![Unity Architecture](docs/UnityArchtectureVRelax.png)
+![Unity Architecture](UnityArchtectureVRelax.png)
 
 - What you prioritised in 2–3 hours and why
 
