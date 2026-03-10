@@ -1,18 +1,36 @@
-- How to run
+#  - How to run
+##  - Run The Game 
+- Click here to download the Folder of the game 
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test)
+- or here if you want a zip file of it
+- [Open Game To Test folder](https://github.com/Osled/VRelax/tree/main/Game%20To%20Test.zip)
 
 
-zenject
+##  - Dependancies 
+ Using Zenject (Extenject) as a Dependancy Injector	
+
+
+##  - Run The Unity File
+
+- Link :  https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
+
+
+
 
 
 
 - High-level architecture overview (diagram or text)
 
-![Unity Architecture](UnityArchtectureVRelax.png)
+![Unity Architecture](Doc/UnityArchtectureVRelax.png)
 
 - What you prioritised in 2–3 hours and why
 
-- [Open the CSV file](VRelax.csv)
+![Unity Architecture](Doc/TimeManagementDay1.png)
+![Unity Architecture](Doc/TimeManagementDay2.png)
 
+![Unity Architecture](Doc/BrainstormConcept.png)
+![Unity Architecture](Doc/BrainstormPlanning.png)
+-
 - 
 - What you would improve with more time
 
