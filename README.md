@@ -31,8 +31,11 @@
 
 
 ## High-level architecture overview (diagram or text)
+- The Following is a an Architcture Diagram the scirpts in this porject:
 
 ![Unity Architecture](Doc/UnityArchtectureVRelax.png)
+
+- 
 
 ## What you prioritised in 2–3 hours and why
 
