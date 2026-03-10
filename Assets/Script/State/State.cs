@@ -24,6 +24,6 @@ public enum JobState
 public enum DroneJobPhase
 {
     None,
-    GoingToStart,
-    GoningToEnd
+    GoingToPickUp,
+    GoningToDropOff
 }

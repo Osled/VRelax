@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46549310}
   m_Layer: 0
-  m_Name: Start
+  m_Name: PickUp
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -544,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50012727}
   m_Layer: 0
-  m_Name: End
+  m_Name: DropOff
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4018,14 +4018,14 @@ MonoBehaviour:
     jobPhase: 0
   jobs:
   - jobName: 1
-    startObject: {fileID: 46549310}
-    endObject: {fileID: 50012727}
+    PickUpObject: {fileID: 46549310}
+    DropOffObject: {fileID: 50012727}
   - jobName: 2
-    startObject: {fileID: 979001532}
-    endObject: {fileID: 1317652099}
+    PickUpObject: {fileID: 979001532}
+    DropOffObject: {fileID: 1317652099}
   - jobName: 3
-    startObject: {fileID: 1450007480}
-    endObject: {fileID: 1885378801}
+    PickUpObject: {fileID: 1450007480}
+    DropOffObject: {fileID: 1885378801}
 --- !u!1 &492293000
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,7 +7730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979001532}
   m_Layer: 0
-  m_Name: Start
+  m_Name: PickUp
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -10404,7 +10404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317652099}
   m_Layer: 0
-  m_Name: End
+  m_Name: DropOff
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11654,7 +11654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450007480}
   m_Layer: 0
-  m_Name: Start
+  m_Name: PickUp
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14628,7 +14628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885378801}
   m_Layer: 0
-  m_Name: End
+  m_Name: DropOff
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

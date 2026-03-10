@@ -51,10 +51,10 @@ public class DroneMovement : MonoBehaviour
 
     Vector3 GetCurrentTarget()
     {
-        if (drone.jobPhase == DroneJobPhase.GoingToStart)
+        if (drone.jobPhase == DroneJobPhase.GoingToPickUp)
             return drone.currentJob.startPosition;
 
-        if (drone.jobPhase == DroneJobPhase.GoningToEnd)
+        if (drone.jobPhase == DroneJobPhase.GoningToDropOff)
             return drone.currentJob.endPosition;
 
         return transform.position;
@@ -82,13 +82,13 @@ public class DroneMovement : MonoBehaviour
 
     void AdvancePhase()
     {
-        if (drone.jobPhase == DroneJobPhase.GoingToStart)
+        if (drone.jobPhase == DroneJobPhase.GoingToPickUp)
         {
-            drone.jobPhase = DroneJobPhase.GoningToEnd;
+            drone.jobPhase = DroneJobPhase.GoningToDropOff;
             return;
         }
 
-        if (drone.jobPhase == DroneJobPhase.GoningToEnd)
+        if (drone.jobPhase == DroneJobPhase.GoningToDropOff)
         {
             drone.JobManager.MarkJobCompleted(drone.currentJob.jobID);
             drone.currentJob = null;

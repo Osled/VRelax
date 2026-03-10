@@ -42,7 +42,7 @@ public class JobManager
     {
         drone.currentJob = job;
         drone.state = DroneState.ExecutingJob;
-        drone.jobPhase = DroneJobPhase.GoingToStart;
+        drone.jobPhase = DroneJobPhase.GoingToPickUp;
         job.state = JobState.Assigned;
 
     }

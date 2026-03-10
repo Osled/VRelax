@@ -28,8 +28,8 @@ public class JobAssignmentController : MonoBehaviour
     public class JobData
     {
         public string jobName;
-        public Transform startObject;
-        public Transform endObject;
+        public Transform PickUpObject;
+        public Transform DropOffObject;
     }
 
 
@@ -56,8 +56,8 @@ public class JobAssignmentController : MonoBehaviour
             Job job = new Job
             {
                 jobID = i,
-                jobStartPoint = jd.startObject,
-                jobEndpoint = jd.endObject,
+                jobPickUpPoint = jd.PickUpObject,
+                jobDropOffpoint = jd.DropOffObject,
             };
             jobManager.AddJob(job);
         }
