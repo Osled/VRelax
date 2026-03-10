@@ -1,5 +1,5 @@
 #  - How to run
-##  - Run The Game 
+##  - Run The Project 
 - Open the link in a new tab.
 - [Download GameToTest](GameToTest.zip)
 - On the top right, click on the download button (Download Raw File).
