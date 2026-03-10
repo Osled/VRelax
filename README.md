@@ -47,9 +47,10 @@
 
 - The first hour I spent desiging and breaking down the requirements and priorties.
 - Shown below is the brainstorming of all the requirements of the assignment.
-![Unity Architecture](Doc/BrainstormConcept.png)
-- The rest of the hour I spent on designing aspects like the Drone behavior, type of Enviroment and Drone Movement ideas:
 ![Unity Architecture](Doc/BrainstormPlanning.png)
+
+- The rest of the hour I spent on designing aspects like the Drone behavior, type of Enviroment and Drone Movement ideas:
+![Unity Architecture](Doc/BrainstormConcept.png)
 ### Now the fun begins; development. 
   #### 1
 - I have spent the first 30 minutes setting up the states of the Drone, Jobs, and injector setup, as they are core parts of the project.
