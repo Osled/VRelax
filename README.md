@@ -77,8 +77,5 @@
 - Fucosed on Optmizing the drone movement make it smoother. test out NavMesh Agent with a hypred system, Navmesh Deals with the pathing, and the DroneMovement would deal with altitude and obsticals.
 - Allow the Drone to deal with delivering to different floors and travel over stairs.
 - Clean Up the UI. Make the UI has preplaned in the Conception session.
-- 
-
-
-
-- Movement Drone
+- Make a house design, either through Blender 3D modeling or placement of unity blocks.
+- Make a UI that is more User friendly and easy to navigate.
