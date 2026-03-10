@@ -1,117 +1,86 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
 
 public class DroneViewModel
 {
+    private readonly JobAssignmentController controller;
+    private readonly ViewCommands ui;
 
-    private JobAssignmentController controller;
-
-    public List<string> droneOptions { get; private set; } = new List<string>();
-    public List<string> droneStatuses { get; private set; } = new List<string>();
-    public List<string> jobStatuses { get; private set; } = new List<string>();
+    public List<string> droneStatuses { get; } = new List<string>();
+    public List<string> jobStatuses { get; } = new List<string>();
 
     public event Action OnUIUpdated;
 
+    private bool isUIVisible;
+    public bool IsUIVisible => isUIVisible;
 
+    private int currentCameraIndex;
+    private int cameraCount;
 
-    public bool isUIVisable { get; private set; } = false;
-
-
-
-    public event Action<int> OnCameraSwitch;
-    private int currentCameraIndex = 0;
-    private int cameraCount = 0;
-
-    private bool usingCameraA = true;
-    public DroneViewModel(JobAssignmentController controller)
+    public DroneViewModel(JobAssignmentController controller, ViewCommands uiCommands)
     {
-
         this.controller = controller;
+        this.ui = uiCommands;
 
-        controller.OnDroneStatusChanged += RefreashUI;
-        controller.OnJobStatusChanged += RefreashUI;
-
-
+        controller.OnDroneStatusChanged += RefreshUI;
+        controller.OnJobStatusChanged += RefreshUI;
     }
 
-    public void LoadDroneOptions()
+    public void SetCameraCount(int count)
     {
-
-        droneOptions.Clear();
-
-        foreach(var data in controller.drones)
-        {
-            droneOptions.Add(data.drone.droneName);
-        }
+        cameraCount = count;
     }
 
     public void AssignjobtoDrone(int droneIndex, int jobIndex)
     {
         controller.AssignJob(droneIndex, jobIndex);
-        RefreashUI();
+        RefreshUI();
     }
 
-    public void RefreashUI()
+    public void TogglePanel()
+    {
+        isUIVisible = !isUIVisible;
+        ui.RequestPanelVisibility(isUIVisible);
+        OnUIUpdated?.Invoke();
+    }
+
+    public void RefreshUI()
     {
         droneStatuses.Clear();
         jobStatuses.Clear();
 
-
-        foreach(var data in controller.drones)
+        foreach (var data in controller.drones)
         {
-
-            droneStatuses.Add(data.drone.droneName+ ": "+ data.status);
+            droneStatuses.Add($"{data.drone.droneName}: {data.status}");
             controller.UpdateDroneStatus(data.drone);
-            
         }
 
         for (int i = 0; i < controller.jobs.Count; i++)
         {
             var job = controller.JobManager.GetJobByID(i);
-            jobStatuses.Add(controller.jobs[i].jobName + ": " + job.state);
+            jobStatuses.Add($"{controller.jobs[i].jobName}: {job.state}");
         }
-        if(OnUIUpdated!= null)
-        {
-            OnUIUpdated();
-        }
+
+        OnUIUpdated?.Invoke();
     }
-    public void TogglePanel()
+
+    public void RequestRestart()
     {
-
-        isUIVisable = !isUIVisable;
-        if (OnUIUpdated != null)
-        {
-            OnUIUpdated();
-        }
+        ui.RequestRestart();
     }
 
-    public void RestartAll() 
+    public void RequestQuit()
     {
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ui.RequestQuit();
     }
-    public void QuitScene()
+
+    public void NextCamera()
     {
+        currentCameraIndex++;
 
-        Application.Quit();
+        if (currentCameraIndex >= cameraCount)
+            currentCameraIndex = 0;
+
+        ui.RequestCameraSwitch(currentCameraIndex);
     }
-
-    public void SetCameraCount(int count)
-{
-    cameraCount = count;
-}
-
-public void NextCamera()
-{
-    currentCameraIndex++;
-
-    if (currentCameraIndex >= cameraCount)
-        currentCameraIndex = 0;
-
-    OnCameraSwitch?.Invoke(currentCameraIndex);
-}
 }
