@@ -16,13 +16,13 @@
 ##  - Run The Unity File
 
 - Using Unity 6 version 6000.3.10f1
-- mport through the Github link of the repostory
-- Or download the folder in Github then navigate to Unity HUB.
-- Press on Projects if you have the latest Unity Hub and then on the top right Press Add.
-- Add should show you two choices from a repo or from disk.
-- Disk if you have the folder installed and extracted.
+- Click on the button 'Code' on top to download the repository.
+- Click on 'Download ZIP' and extract the ZIP file.
+- Navigate to Unity HUB.
+- Press on 'Projects' if you have the latest Unity Hub and then on the top right press 'Add'.
+- Choose 'Add Project from disk'.
 
-#### If all went well, Great Job, now you can explore my work.
+#### If all went well, you can now explore my work.
 
 
 
