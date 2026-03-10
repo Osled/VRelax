@@ -4,7 +4,7 @@
 - Open the link in a new tab.
 - [Download GameToTest](GameToTest.zip)
 - On the top right, click on the download button (Download Raw File).
-- this file includes the executable of the playable Drone Assignment.
+- This file includes the executable of the playable Drone Assignment.
 - Once Downloaded open or extract the file then start the Application file with the name (VRelax Drone Assignment)
 
 ##  - Dependancies 
