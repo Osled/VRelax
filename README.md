@@ -30,7 +30,7 @@
 
 
 # High-level architecture overview (diagram or text)
-- The Following is a an Architcture Diagram the scirpts in this porject:
+- The Following is a an Architcture Diagram about the scripts in this project:
 
 ![Unity Architecture](Doc/UnityArchtectureVRelax.png)
 
