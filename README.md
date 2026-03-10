@@ -29,12 +29,11 @@
 
 
 
-# High-level architecture overview (diagram or text)
+# High-level architecture overview
 - The Following is a an Architcture Diagram about the scripts in this project:
 
 ![Unity Architecture](Doc/UnityArchtectureVRelax.png)
 
-- 
 
 # What I have prioritised in 2–3 hours and why
 ### Time Management
