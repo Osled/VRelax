@@ -53,8 +53,8 @@
 ![Unity Architecture](Doc/BrainstormConcept.png)
 ### Now the fun begins; development. 
   #### 1
-- I have spent the first 30 minutes setting up the states of the Drone, Jobs, and injector setup, as they are core parts of the project.
-  -1-**The Why=** The State part is important because all the codes refer to this. It is also the fastest to make.
+ - I have spent the first 30 minutes setting up the states of the Drone, Jobs, and injector setup, as they are core parts of the project.
+  -**The Why=** The State part is important because all the codes refer to this. It is also the fastest to make.
   #### 2
  - The following hour I focused on making a future proof JobManagement system that hosts all the information of the jobs and is able to Get and Set the jobs.
  - **The Why=** This part is important because it is the fundation of the project and acts as the core system. Therefore, it needs to be future proof.
