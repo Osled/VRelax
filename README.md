@@ -39,7 +39,7 @@
 ### Time Management
 - I started with pre-planning the project before I began with the development by setting up the following time table
 - using **Agile** Methodology
-- That was done to give me a clear idea of what the task at hand is how to and best approach the problem.
+- That was done to give me a clear idea of what the task at hand is and how to best approach the problem.
 
 ![Unity Architecture](Doc/TimeManagementDay1.png)
 - The following is also extra hours I have spent on the project to clean up code and UI and especially the Drone Code
