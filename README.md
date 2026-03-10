@@ -42,7 +42,7 @@
 - That was done to give me a clear idea of what the task at hand is and how to best approach the problem.
 
 ![Unity Architecture](Doc/TimeManagementDay1.png)
-- The following is also extra hours I have spent on the project to clean up code and UI and especially the Drone Code
+- Below are also the extra hours I have spent on the project to clean up drone code, other code and UI.
 ![Unity Architecture](Doc/TimeManagementDay2.png)
 
 - The first hour I have spent Desiging and breaking down Requirment and Priorties.
