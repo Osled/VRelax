@@ -30,14 +30,14 @@
 
 
 
-## High-level architecture overview (diagram or text)
+# High-level architecture overview (diagram or text)
 - The Following is a an Architcture Diagram the scirpts in this porject:
 
 ![Unity Architecture](Doc/UnityArchtectureVRelax.png)
 
 - 
 
-## What I have prioritised in 2–3 hours and why
+# What I have prioritised in 2–3 hours and why
 ### Time Management
 - I have started with preplanning the project before I would start with development by setting up the following Time table
 - using **Agile** Methodology
@@ -71,7 +71,7 @@
 - The Goal is to have a deliverable that funtions in 3 hours ( that was checked). I kept coming up with ideas, so I had some time the day after and I started optimizing the Drone Movement.
 - also spent and extra hour adding FPS viewer and cleaning up the code.
 - in total it was 2 extra hours over development of adding and cleaning up
-## What I would improve with more time 
+# What I would improve with more time 
 - Focused on making the JobManager and Job Assignment code more flexable and easier to add features.
 - Add comments information in the code to help clearfy what each function does.
 - Fucosed on Optmizing the drone movement make it smoother. test out NavMesh Agent with a hypred system, Navmesh Deals with the pathing, and the DroneMovement would deal with altitude and obsticals.
