@@ -1,0 +1,17 @@
+﻿
+"09/03/2026                            Hours:","12:00                                      12:15","12:30                                         12:45","14:00                                            14:15","14:30                                          14:45","15:00                                          15:15","15:30                                         15:45","16:00                                           16:15","16:30                                         16:45","17:00                                         17:15","10/03/2026","10:30                                         10:45","11:00                                         11:15","11:30                                         11:45","12:00                                         12:15"
+"Phases","Planning / preparation","Design / Concepting","Development"
+"Planning:   Setup Timetable  Plan Core Requirements","Setup Timetable
+Plan Core Requirements"
+"Designing:   World + Navigation  Jobs + Drone Behavior  UI",,"World + Navigation
+Jobs + Drone Behavior
+UI"
+"Development:   Implement DI Tool (Extenject or VContainer)State of Job and Drone SetupInjector SetupJobManagerMVVM setupUI Programming",,"Importing Extenject","State of Job and Drone Setup
+Injector Setup","JobManager",,"MVVM setup
+UI Programming",,,,,,"UI Programming"
+"Development:   UI PlacementDrone ProgrammingEnvironment PlacementStatic ObsticalPlacementFPS Viewer",,,,,,,"Drone Programming","UI Placement
+Environment Placement",,,"Drone Programming",,"Environment Placement
+Static ObsticalPlacement
+FPS Viewer"
+"Development:   Cleanup UI",,,,,,,,,"Cleanup UI and Code",,,,,"Cleanup UI and Code"
+"Time Management"
