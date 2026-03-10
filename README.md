@@ -10,13 +10,13 @@
 
 ##  - Dependencies 
  Using Zenject (Extenject) as a Dependency Injector	
-- the Project files should Autonatically Import Dependacy, if now please imported through this link
+- The Project files should automatically be imported as Dependacy. If not, please import through this link:
 - Link :  https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
 
 ##  - Run The Unity File
 
 - Using Unity 6 version 6000.3.10f1
-- Either Imported thoug Github link of the repostory
+- Either import through the Github link of the repostory
 - or Download the folder in github then navigate to Unity HUB.
 - Press on Projects if you have the latest Unity Hub and then on the top right Press Add.
 - Add should show you two choices from a repo or from disk.
