@@ -1,6 +1,6 @@
 #  - How to run
 ##  - Run The Game 
-- Here is how to download the Folder of the game:
+- How to download the Folder of the game:
 - Open the link in a new tab.
 - [Download GameToTest](GameToTest.zip)
 - On the top right, click on the download button (Download Raw File).
