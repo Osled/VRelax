@@ -8,7 +8,7 @@
 - Once downloaded open or extract the file.
 - Then open **'VRelax Drone Assignment'**.
 
-##  - Dependancies 
+##  - Dependencies 
  Using Zenject (Extenject) as a Dependancy Injector	
 - the Project files should Autonatically Import Dependacy, if now please imported through this link
 - Link :  https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735 
