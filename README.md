@@ -45,35 +45,33 @@
 - Below are also the extra hours I have spent on the project to clean up drone code, other code and UI.
 ![Unity Architecture](Doc/TimeManagementDay2.png)
 
-- The first hour I have spent Desiging and breaking down Requirment and Priorties.
-- Shown below is the Brainstorming of all the Requirments of the Assignment.
+- The first hour I spent desiging and breaking down the requirements and priorties.
+- Shown below is the brainstorming of all the requirements of the assignment.
 ![Unity Architecture](Doc/BrainstormConcept.png)
-- Rest of the hour I have spend Designing aspects like the Drone behavior, type of Enviroment and Drone Movement ideas:
+- The rest of the hour I spent on designing aspects like the Drone behavior, type of Enviroment and Drone Movement ideas:
 ![Unity Architecture](Doc/BrainstormPlanning.png)
-### Now the Fun Begins, Development. 
+### Now the fun begins; development. 
   #### 1
-- I have set the first 30 mins setting up the states of the Drone and Jobs and injector setup as they are core essential part of the project.
-  -1-**The Why=** The State part is important because all the codes will look at the state of the drone and the job and it is also the fastest to make.
+- I have spent the first 30 minutes setting up the states of the Drone, Jobs, and injector setup, as they are core parts of the project.
+  -1-**The Why=** The State part is important because all the codes refer to this. It is also the fastest to make.
   #### 2
- - The following hour I have focused on making a future proof Jobmanagement system that hosts all the information of the jobs and
- - able to Get and set the jobs.
- - **The Why=** this part is important because it is the fundation of the Project and act as the code system. Therefore, it needs to be future proof
- - that includes JobManager, Job, and Drone script and Job Assigment script.
- - The following 30 mins I have spent on UI Programming using simple MVVM method script. I have expanded on it the following day.
- - At the begening the UI only had text and that text later was connected with the Jobs and Drones
+ - The following hour I focused on making a future proof JobManagement system that hosts all the information of the jobs and is able to Get and Set the jobs.
+ - **The Why=** This part is important because it is the fundation of the project and acts as the core system. Therefore, it needs to be future proof.
+ - That includes the JobManager, Job, Drone, and JobAssigment scripts.
+ - The following 30 minutes I spent on UI programming by using MVVM method scripts. I expanded on it the next day.
+ - At the beginning, the UI only had text which was later connected to the Jobs' and Drones' status.
  - #### 3 
- - The last hour I have spend Programming the Drone movemet and setting it up to avoid obsticals, so I used simple Raycast infront of the Drone. (later I Remembered that sphere  Raycast is better for this situation)
-- then I have placed all the enviroment parts and enviroment assets. ( I went simple on the environment by using preexisting shapes in unity to save time)
-- **The Why** focusing on the drone Programing will tie the whole system together and make it runable even if it didnt look pretty. thats why i spent an extra 30 mins just to fix the UI and the Enviromental placement.
+ - The last hour I spent programming the DroneMovement and programmed it to avoid obstacles, so I used one line Raycast in front of the Drone. (later I changed it to a sphere Raycast because it was better for this situation)
+- Then I placed all the enviroment parts and enviroment assets. (I made a simple environment by using pre-existing shapes in Unity to save time)
+- **The Why** Focusing on the drone programing will tie the whole system together and make it runable even if it didn't look pretty. That is why I spent an extra 30 minutes just to fix the UI and the enviromental placement.
   #### Extra Time
-- The Goal is to have a deliverable that funtions in 3 hours ( that was checked). I kept coming up with ideas, so I had some time the day after and I started optimizing the Drone Movement.
-- also spent and extra hour adding FPS viewer and cleaning up the code.
-- in total it was 2 extra hours over development of adding and cleaning up
+- The goal was to have a deliverable that funtions in 3 hours. This was accompplished. I kept coming up with ideas and I had some time the day after, so I started optimizing the Drone Movement.
+- I also spent and extra hour adding FPS viewer and cleaning up the code.
+- In total it was 2 extra hours of development and debugging.
 # What I would improve with more time 
-- Focused on making the JobManager and Job Assignment code more flexable and easier to add features.
-- Add comments information in the code to help clearfy what each function does.
-- Fucosed on Optmizing the drone movement make it smoother. test out NavMesh Agent with a hypred system, Navmesh Deals with the pathing, and the DroneMovement would deal with altitude and obsticals.
+- Focus on making the JobManager and JobAssignment code more flexible and easier to add features.
+- Add comments with information in the code to help clarify what each function does.
+- Focus on optmizing the drone movement to make it smoother. Test out NavMesh Agent with a hybrid system. Navmesh Deals with the pathing, and the DroneMovement would deal with altitude and obstacles.
 - Allow the Drone to deal with delivering to different floors and travel over stairs.
-- Clean Up the UI. Make the UI has preplaned in the Conception session.
-- Make a house design, either through Blender 3D modeling or placement of unity blocks.
-- Make a UI that is more User friendly and easy to navigate.
+- Make a house design, either through Blender 3D modeling or placement of Unity blocks.
+- Make an UI that is more user friendly and easier to navigate.
