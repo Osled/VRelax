@@ -70,7 +70,7 @@
 - I also spent and extra hour adding FPS viewer and cleaning up the code.
 - In total it was 2 extra hours of development and debugging.
 # What I would improve with more time
-- Use MVVM extension like uFrame instead. It would be better for a long term project and eadier to be used with bigger team working on the same project.
+- Use MVVM extension like uFrame or peppermint instead. It would be better for a long term project and eadier to be used with bigger team working on the same project.
 - Focus on making the JobManager and JobAssignment code more flexible and easier to add features.
 - Add comments with information in the code to help clarify what each function does.
 - Focus on optmizing the drone movement to make it smoother. Test out NavMesh Agent with a hybrid system. Navmesh Deals with the pathing, and the DroneMovement would deal with altitude and obstacles.
