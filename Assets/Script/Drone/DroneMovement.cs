@@ -30,7 +30,7 @@ public class DroneMovement : MonoBehaviour
         Vector3 target = GetCurrentTarget();
         float dist = Vector3.Distance(transform.position, target);
 
-       
+       // stop the drone
         if (dist < 1f)
         {
             rb.linearVelocity = Vector3.zero;   
