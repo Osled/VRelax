@@ -61,11 +61,14 @@
  - That includes the JobManager, Job, Drone, and JobAssigment scripts.
  - The following 30 minutes I spent on UI programming by using MVVM method scripts. I expanded on it the next day.
  - At the beginning, the UI only had text which was later connected to the Jobs' and Drones' status.
+   - **The Why=** The MVVM ties the whole system together to function and also display the state of the jobs and the drones. Therefore, it had to at least change the text to represent that. Also the dropdown menu for each job to make it an easy selection for the user.
  #### 3 -- 16:00
  - The last hour I spent programming the DroneMovement and programmed it to avoid obstacles, so I used one line Raycast in front of the Drone. (later I changed it to a sphere Raycast because it was better for this situation)
 - Then I placed all the enviroment parts and enviroment assets. (I made a simple environment by using pre-existing shapes in Unity to save time)
 - **The Why** Focusing on the drone programing will tie the whole system together and make it runable even if it didn't look pretty. That is why I spent an extra 30 minutes just to fix the UI and the enviromental placement.
   #### Extra Time
+  - Added extra buttons like restart, quit and open and close menu with the name (Job listing).
+    - Camera switcher button has been added to seitch between views in the scene with 5 cameras disabled and one only is on display. overhead camera, side view camera, and each drone has a camera.
 - The goal was to have a deliverable that funtions in 3 hours. This was accompplished. I kept coming up with ideas and I had some time the day after, so I started optimizing the Drone Movement.
 - I also spent and extra hour adding FPS viewer and cleaning up the code.
 - In total it was 2 extra hours of development and debugging.
