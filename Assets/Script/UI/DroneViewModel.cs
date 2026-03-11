@@ -52,12 +52,12 @@ public class DroneViewModel
         jobStatuses.Clear();
 
         foreach (var data in controller.drones)
-            droneStatuses.Add($"{data.drone.droneName}: {data.status}");
+            droneStatuses.Add(data.drone.droneName + ": " + data.status);
 
         for (int i = 0; i < controller.jobs.Count; i++)
         {
             var job = controller.JobManager.GetJobByID(i);
-            jobStatuses.Add($"{controller.jobs[i].jobName}: {job.state}");
+            jobStatuses.Add(controller.jobs[i].jobName+": "+job.state);
         }
 
         OnUIUpdated?.Invoke();
