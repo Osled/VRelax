@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class DroneUIVIew : MonoBehaviour, ViewCommands
+public class DroneUIView : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown[] jobDropdown;
     [SerializeField] private TMP_Text[] DroneStatus;
@@ -26,55 +26,46 @@ public class DroneUIVIew : MonoBehaviour, ViewCommands
     {
         yield return null;
 
-        viewModel = new DroneViewModel(controller, this);
+        viewModel = new DroneViewModel(controller);
 
         viewModel.OnUIUpdated += UpdateUI;
         viewModel.SetCameraCount(cameras.Length);
 
         toggleButton.onClick.AddListener(() => viewModel.TogglePanel());
-        restartButton.onClick.AddListener(() => viewModel.RequestRestart());
-        quitButton.onClick.AddListener(() => viewModel.RequestQuit());
+        restartButton.onClick.AddListener(() => RestartScene());
+        quitButton.onClick.AddListener(() => QuitApplication());
         camSwitchButton.onClick.AddListener(() => viewModel.NextCamera());
 
         jobDropdown[0].onValueChanged.AddListener(i =>
         {
-            if (i > 0) viewModel.AssignjobtoDrone(i - 1, 0);
+            if (i > 0) viewModel.AssignJobToDrone(i - 1, 0);
         });
 
         jobDropdown[1].onValueChanged.AddListener(i =>
         {
-            if (i > 0) viewModel.AssignjobtoDrone(i - 1, 1);
+            if (i > 0) viewModel.AssignJobToDrone(i - 1, 1);
         });
 
         jobDropdown[2].onValueChanged.AddListener(i =>
         {
-            if (i > 0) viewModel.AssignjobtoDrone(i - 1, 2);
+            if (i > 0) viewModel.AssignJobToDrone(i - 1, 2);
         });
-    }
 
-    public void RequestRestart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void RequestQuit()
-    {
-        Application.Quit();
-    }
-
-    public void RequestCameraSwitch(int index)
-    {
-        for (int i = 0; i < cameras.Length; i++)
-            cameras[i].enabled = (i == index);
-    }
-
-    public void RequestPanelVisibility(bool visible)
-    {
-        mainPanel.SetActive(visible);
+        UpdateUI();
     }
 
     private void UpdateUI()
     {
+        // Panel visibility
+        mainPanel.SetActive(viewModel.IsUIVisible);
+
+        // Camera switching
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            cameras[i].enabled = (i == viewModel.CurrentCameraIndex);
+        }
+
+        // Drone statuses
         for (int i = 0; i < DroneStatus.Length; i++)
         {
             if (i < viewModel.droneStatuses.Count)
@@ -83,6 +74,7 @@ public class DroneUIVIew : MonoBehaviour, ViewCommands
                 DroneStatus[i].text = "Idle";
         }
 
+        // Job statuses
         for (int i = 0; i < JobStatus.Length; i++)
         {
             if (i < viewModel.jobStatuses.Count)
@@ -90,5 +82,21 @@ public class DroneUIVIew : MonoBehaviour, ViewCommands
             else
                 JobStatus[i].text = "Pending";
         }
+    }
+
+    private void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void QuitApplication()
+    {
+        Application.Quit();
+    }
+
+    private void OnDestroy()
+    {
+        if (viewModel != null)
+            viewModel.OnUIUpdated -= UpdateUI;
     }
 }

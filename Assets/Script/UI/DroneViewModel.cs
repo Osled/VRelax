@@ -4,23 +4,20 @@ using System.Collections.Generic;
 public class DroneViewModel
 {
     private readonly JobAssignmentController controller;
-    private readonly ViewCommands ui;
 
-    public List<string> droneStatuses { get; } = new List<string>();
-    public List<string> jobStatuses { get; } = new List<string>();
+    public List<string> droneStatuses { get; } = new();
+    public List<string> jobStatuses { get; } = new();
 
     public event Action OnUIUpdated;
 
-    private bool isUIVisible;
-    public bool IsUIVisible => isUIVisible;
+    public bool IsUIVisible { get; private set; }
+    public int CurrentCameraIndex { get; private set; }
 
-    private int currentCameraIndex;
     private int cameraCount;
 
-    public DroneViewModel(JobAssignmentController controller, ViewCommands uiCommands)
+    public DroneViewModel(JobAssignmentController controller)
     {
         this.controller = controller;
-        this.ui = uiCommands;
 
         controller.OnDroneStatusChanged += RefreshUI;
         controller.OnJobStatusChanged += RefreshUI;
@@ -31,17 +28,22 @@ public class DroneViewModel
         cameraCount = count;
     }
 
-    public void AssignjobtoDrone(int droneIndex, int jobIndex)
+    public void TogglePanel()
+    {
+        IsUIVisible = !IsUIVisible;
+        OnUIUpdated?.Invoke();
+    }
+
+    public void NextCamera()
+    {
+        CurrentCameraIndex = (CurrentCameraIndex + 1) % cameraCount;
+        OnUIUpdated?.Invoke();
+    }
+
+    public void AssignJobToDrone(int droneIndex, int jobIndex)
     {
         controller.AssignJob(droneIndex, jobIndex);
         RefreshUI();
-    }
-
-    public void TogglePanel()
-    {
-        isUIVisible = !isUIVisible;
-        ui.RequestPanelVisibility(isUIVisible);
-        OnUIUpdated?.Invoke();
     }
 
     public void RefreshUI()
@@ -50,10 +52,7 @@ public class DroneViewModel
         jobStatuses.Clear();
 
         foreach (var data in controller.drones)
-        {
             droneStatuses.Add($"{data.drone.droneName}: {data.status}");
-            controller.UpdateDroneStatus(data.drone);
-        }
 
         for (int i = 0; i < controller.jobs.Count; i++)
         {
@@ -62,25 +61,5 @@ public class DroneViewModel
         }
 
         OnUIUpdated?.Invoke();
-    }
-
-    public void RequestRestart()
-    {
-        ui.RequestRestart();
-    }
-
-    public void RequestQuit()
-    {
-        ui.RequestQuit();
-    }
-
-    public void NextCamera()
-    {
-        currentCameraIndex++;
-
-        if (currentCameraIndex >= cameraCount)
-            currentCameraIndex = 0;
-
-        ui.RequestCameraSwitch(currentCameraIndex);
     }
 }
